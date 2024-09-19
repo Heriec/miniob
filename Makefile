@@ -9,3 +9,5 @@ init:
 build:
 	bash build.sh
 
+test-%:
+	python3 test/case/miniob_test.py --test-cases=$*
