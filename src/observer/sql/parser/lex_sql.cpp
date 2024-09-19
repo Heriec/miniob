@@ -375,8 +375,8 @@ static void yy_fatal_error (yyconst char msg[] ,yyscan_t yyscanner );
 	*yy_cp = '\0'; \
 	yyg->yy_c_buf_p = yy_cp;
 
-#define YY_NUM_RULES 61
-#define YY_END_OF_BUFFER 62
+#define YY_NUM_RULES 62
+#define YY_END_OF_BUFFER 63
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -1296,6 +1296,10 @@ LOG_DEBUG("Unknown character [%c]",yytext[0]); return yytext[0];
 case 61:
 YY_RULE_SETUP
 #line 142 "lex_sql.l"
+case 62:
+YY_RULE_SETUP
+#line 144 "lex_sql.l"
+    YY_BREAK
 ECHO;
 	YY_BREAK
 #line 1302 "lex_sql.cpp"

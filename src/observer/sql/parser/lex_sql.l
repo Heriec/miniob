@@ -141,6 +141,8 @@ FORMAT                                  RETURN_TOKEN(FORMAT);
 .                                       LOG_DEBUG("Unknown character [%c]",yytext[0]); return yytext[0];
 %%
 
+[Dd][Aa][Tt][Ee]                        RETURN_TOKEN(DATE);
+
 void scan_string(const char *str, yyscan_t scanner) {
   yy_switch_to_buffer(yy_scan_string(str, scanner), scanner);
 }
